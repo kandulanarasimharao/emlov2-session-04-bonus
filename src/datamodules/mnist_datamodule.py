@@ -32,7 +32,7 @@ class MNISTDataModule(LightningDataModule):
     split, transform and process the data.
 
     Read the docs:
-        https://pytorch-lightning.readthedocs.io/en/latest/data/datamodule.html
+        https://pytorch-lightning.readthedocs.io/en/latest/extensions/datamodules.html
     """
 
     def __init__(
@@ -40,7 +40,7 @@ class MNISTDataModule(LightningDataModule):
         data_dir: str = "data/",
         train_val_test_split: Tuple[int, int, int] = (55_000, 5_000, 10_000),
         batch_size: int = 64,
-        num_workers: int = 0,
+        num_workers: int = 16,
         pin_memory: bool = False,
     ):
         super().__init__()
