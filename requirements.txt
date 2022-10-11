@@ -25,7 +25,7 @@ pytest          # tests
 # sh            # for running bash commands in some tests (linux/macos only)
 
 #demo
-gradio==3.3.1
+gradio==3.4.1
 dvc
 pre-commit==2.11.1
 dvc-gdrive
